@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Надя Тарасова](https://up.htmlacademy.ru/adaptive/27/user/2221637).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
