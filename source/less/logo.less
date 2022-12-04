@@ -1,0 +1,15 @@
+@width-logo: 185px;
+@height-logo: 96px;
+
+.logo {
+  height: 0;
+  width: @width-logo;
+  position: absolute;
+  left: calc((100% - @width-logo) / 2);
+  z-index: 1;
+}
+
+.logo__img {
+  width: @width-logo;
+  height: @height-logo;
+}
