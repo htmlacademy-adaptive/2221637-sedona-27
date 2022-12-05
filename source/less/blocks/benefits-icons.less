@@ -1,0 +1,46 @@
+/*БЛОК С ИКОНКАМИ */
+.benefits-icons {
+  padding: 31px 18px 46px 65px;
+}
+
+.benefits-icons__title {
+  .mixin-fonts(18px; 26px; 700);
+}
+
+.benefits-icons__text {
+  .mixin-fonts(14px; 21px; 400);
+}
+
+.benefits-icons__item {
+  list-style-type: none;
+  padding-bottom: 33px;
+  position: relative;
+
+  &--last-item {
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: " ";
+    background-size: contain;
+    font-size: 0;
+    position: absolute;
+    left: -47px;
+    top: -8px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  }
+
+  &--house::before {
+    background-image: url("/img/index/house.svg");
+  }
+
+  &--food::before {
+    background-image: url("/img/index/food.svg");
+  }
+
+  &--gift::before {
+    background-image: url("/img/index/gift.svg");
+  }
+}

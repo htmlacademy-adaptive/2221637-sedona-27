@@ -1,0 +1,33 @@
+@import url("../mixin-fonts.less");
+@import url("../variables.less");
+
+/*БЛОК БЕЗ ИЗОБРАЖЕНИЙ*/
+.benefits-no-image {
+  padding: 0 18px;
+  background-color: @gray;
+}
+
+.benefits-no-image__item {
+  list-style-type: none;
+  border-bottom: 1px solid #d6d6d6;
+  text-align: center;
+  padding: 24px 0;
+
+  &--last-item {
+    border: 0;
+  }
+}
+
+.benefits-no-image__title {
+  .mixin-fonts(18px; 26px; 700);
+  padding-bottom: 11px;
+}
+
+.benefits-no-image__subtitle {
+  .mixin-fonts(14px; 21px; 400; @gray--dark);
+  padding-bottom: 17px;
+}
+
+.benefits-no-image__text {
+  .mixin-fonts(14px; 21px; 400; @gray--dark);
+}
