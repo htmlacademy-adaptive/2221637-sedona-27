@@ -95,24 +95,24 @@
 .site-navigation__toggle::before {
   width: 23px;
   height: 22px;
-  background-image: url("/img/global/icon-menu.svg");
+  background-image: url("../img/global/icon-menu.svg");
 }
 .site-navigation__toggle--is-open::before {
   width: 22px;
   height: 22px;
-  background-image: url("/img/global/icon-cross.svg");
+  background-image: url("../img/global/icon-cross.svg");
 }
 .site-navigation__toggle:hover::before {
-  background-image: url("/img/global/icon-menu_hover.svg");
+  background-image: url("../img/global/icon-menu_hover.svg");
 }
 .site-navigation__toggle--is-open:hover::before {
-  background-image: url("/img/global/icon-cross_hover.svg");
+  background-image: url("../img/global/icon-cross_hover.svg");
 }
 .site-navigation__toggle:active::before {
-  background-image: url("/img/global/icon-menu_active.svg");
+  background-image: url("../img/global/icon-menu_active.svg");
 }
 .site-navigation__toggle--is-open:active::before {
-  background-image: url("/img/global/icon-cross_active.svg");
+  background-image: url("../img/global/icon-cross_active.svg");
 }
 .site-navigation-list {
   list-style-type: none;
@@ -135,7 +135,7 @@
 .main-banner {
   height: 389px;
   background-color: #2d4047;
-  background-image: url("/img/global/main-banner.jpg");
+  background-image: url("../img/global/main-banner.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -308,13 +308,13 @@
   display: inline-block;
 }
 .benefits-icons__item--house::before {
-  background-image: url("/img/index/house.svg");
+  background-image: url("../img/index/house.svg");
 }
 .benefits-icons__item--food::before {
-  background-image: url("/img/index/food.svg");
+  background-image: url("../img/index/food.svg");
 }
 .benefits-icons__item--gift::before {
-  background-image: url("/img/index/gift.svg");
+  background-image: url("../img/index/gift.svg");
 }
 .booking {
   padding: 38px 18px 49px 18px;
@@ -383,22 +383,22 @@
   display: inline-block;
 }
 .social-button--vkontakte::before {
-  background-image: url("/img/social/vkontakte.svg");
+  background-image: url("../img/social/vkontakte.svg");
 }
 .social-button--vkontakte:active::before {
-  background-image: url("/img/social/vkontakte_active.svg");
+  background-image: url("../img/social/vkontakte_active.svg");
 }
 .social-button--telegram::before {
-  background-image: url("/img/social/telegram.svg");
+  background-image: url("../img/social/telegram.svg");
 }
 .social-button--telegram:active::before {
-  background-image: url("/img/social/telegram_active.svg");
+  background-image: url("../img/social/telegram_active.svg");
 }
 .social-button--youtube::before {
-  background-image: url("/img/social/youtube.svg");
+  background-image: url("../img/social/youtube.svg");
 }
 .social-button--youtube:active::before {
-  background-image: url("/img/social/youtube_active.svg");
+  background-image: url("../img/social/youtube_active.svg");
 }
 .copyright {
   display: flex;
