@@ -1,3 +1,4 @@
+/* Global */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -23,42 +24,11 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.text {
-  font-family: "PT Sans", "Arial", serif;
-  font-style: normal;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-}
-.title-small {
-  font-family: "PT Sans", "Arial", serif;
-  font-style: normal;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
-.title-normal {
-  font-family: "PT Sans", "Arial", serif;
-  font-style: normal;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-}
-.subline {
-  font-family: "PT Sans", "Arial", serif;
-  font-style: normal;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-}
+/* Размеры экрана */
+/* ЦВЕТА */
+/* Основной цвет. Синий и голубой */
+/* Оттенки серого. Цвета текста */
+/* blocks */
 .button {
   /* ТЕКСТ НА КНОПКЕ */
   font-family: "PT Sans", "Arial", serif;
@@ -86,39 +56,21 @@
   background-color: #5496bd;
   color: #87b5d1;
 }
+/* ПОКА ТУТ ПУСТО */
 .header {
   text-align: center;
-  width: 100%;
+  max-width: 100%;
 }
-.site-navigation-wrapper {
+.header__logo {
   position: absolute;
-  width: 100%;
-  top: 56px;
+  left: calc((100% - 185px) / 2);
+  z-index: 1;
 }
-/* СПИСОК МЕНЮ */
-.site-navigation-list-wrapper {
+.site-navigation__list-wrapper {
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 1;
-}
-.site-navigation-list {
-  list-style-type: none;
-}
-.site-navigation-list__link {
-  width: 100%;
-  font-size: 18px;
-  border-bottom: 1px solid #678fa8;
-  border-top: 1px solid #9ac2db;
-  padding-top: 16px;
-}
-.site-navigation-list__link--first-element {
-  border-top: 0;
-}
-.site-navigation-list__link--last-element {
-  border-bottom: 0;
-  box-shadow: inset 0 -7px 10px -10px #000f14;
-  overflow: hidden;
 }
 /* КНОКА ОТКРЫТЬ-ЗАКРЫТЬ В МОБИЛЬНОМ МЕНЮ */
 .site-navigation__toggle-wrapper {
@@ -162,21 +114,39 @@
 .site-navigation__toggle--is-open:active::before {
   background-image: url("/img/global/icon-cross_active.svg");
 }
+.site-navigation-list {
+  list-style-type: none;
+}
+.site-navigation-list__link {
+  width: 100%;
+  font-size: 18px;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+  padding-top: 16px;
+}
+.site-navigation-list__link--first-element {
+  border-top: 0;
+}
+.site-navigation-list__link--last-element {
+  border-bottom: 0;
+  box-shadow: inset 0 -7px 10px -10px #000f14;
+  overflow: hidden;
+}
 .main-banner {
   height: 389px;
-  background: url("/img/global/main-banner.jpg");
+  background-color: #2d4047;
+  background-image: url("/img/global/main-banner.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #2d4047;
   display: flex;
   justify-content: center;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 26px), 50% 100%, 0% calc(100% - 26px));
           clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 26px), 50% 100%, 0% calc(100% - 26px));
 }
 .main-banner__img-wrapper {
-  margin-top: 90px;
+  padding-top: 90px;
 }
 .main-banner__img {
   width: 282px;
@@ -185,9 +155,6 @@
 .logo {
   height: 0;
   width: 185px;
-  position: absolute;
-  left: calc((100% - 185px) / 2);
-  z-index: 1;
 }
 .logo__img {
   width: 185px;
@@ -197,12 +164,26 @@
   padding: 32px 18px 40px 18px;
   text-align: center;
 }
-.slogan__title-small {
+.slogan__title {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
   padding-bottom: 35px;
 }
 .slogan__text {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   color: #333333;
 }
+/* ПОКА ТУТ ПУСТО */
 /*БЛОК С БОЛЬШОЙ КАРТИНКОЙ */
 .benefits-image__text-wrapper {
   background-color: #81b3d2;
@@ -213,23 +194,99 @@
   -webkit-clip-path: polygon(0% 0%, 50% 26px, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 50% 26px, 100% 0%, 100% 100%, 0% 100%);
 }
-.benefits-image__title-small {
+.benefits-image__title {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
   color: #ffffff;
   padding-bottom: 11px;
 }
-.benefits-image__subline {
+.benefits-image__subtitle {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   color: #ffffff;
   padding-bottom: 17px;
 }
 .benefits-image__text {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   color: #ffffff;
+}
+/*БЛОК БЕЗ ИЗОБРАЖЕНИЙ*/
+.benefits-no-image {
+  padding: 0 18px;
+  background-color: #eeeeee;
+}
+.benefits-no-image__item {
+  list-style-type: none;
+  border-bottom: 1px solid #d6d6d6;
+  text-align: center;
+  padding: 24px 0;
+}
+.benefits-no-image__item--last-item {
+  border: 0;
+}
+.benefits-no-image__title {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  padding-bottom: 11px;
+}
+.benefits-no-image__subtitle {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  padding-bottom: 17px;
+}
+.benefits-no-image__text {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
 }
 /*БЛОК С ИКОНКАМИ */
 .benefits-icons {
   padding: 31px 18px 46px 65px;
 }
-.benefits-icons__title-small {
-  padding-bottom: 16px;
+.benefits-icons__title {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.benefits-icons__text {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
 }
 .benefits-icons__item {
   list-style-type: none;
@@ -259,47 +316,48 @@
 .benefits-icons__item--gift::before {
   background-image: url("/img/index/gift.svg");
 }
-/*БЛОК БЕЗ ИЗОБРАЖЕНИЙ*/
-.benefits-no-image {
-  padding: 0 18px;
-  background-color: #eeeeee;
-}
-.benefits-no-image__item {
-  list-style-type: none;
-  border-bottom: 1px solid #d6d6d6;
-  text-align: center;
-  padding: 24px 0;
-}
-.benefits-no-image__item--last-item {
-  border: 0;
-}
-.benefits-no-image__title-small {
-  padding-bottom: 11px;
-}
-.benefits-no-image__subline {
-  color: #333333;
-  padding-bottom: 17px;
-}
-.benefits-no-image__text {
-  color: #333333;
-}
 .booking {
   padding: 38px 18px 49px 18px;
   text-align: center;
 }
 .booking__title {
-  padding-bottom: 20px;
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 20px;
 }
 .booking__text {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   color: #333333;
   padding-bottom: 32px;
 }
+/* ПОКА ТУТ ПУСТО */
 .footer {
   padding: 38px 0 23px 0;
   text-align: center;
 }
 .footer__title {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
   padding-bottom: 33px;
+}
+.footer__copyright-wrapper {
+  width: 128px;
+  margin: 40px auto 23px auto;
 }
 .social {
   font-size: 0;
@@ -311,12 +369,12 @@
 .social__item--last-item {
   margin-right: 0;
 }
-.social__button {
+.social-button {
   width: 48px;
   height: 48px;
   padding: 0;
 }
-.social__button::before {
+.social-button::before {
   content: " ";
   background-size: contain;
   margin: 12px;
@@ -324,32 +382,37 @@
   height: 24px;
   display: inline-block;
 }
-.social__button--vkontakte::before {
+.social-button--vkontakte::before {
   background-image: url("/img/social/vkontakte.svg");
 }
-.social__button--vkontakte:active::before {
+.social-button--vkontakte:active::before {
   background-image: url("/img/social/vkontakte_active.svg");
 }
-.social__button--telegram::before {
+.social-button--telegram::before {
   background-image: url("/img/social/telegram.svg");
 }
-.social__button--telegram:active::before {
+.social-button--telegram:active::before {
   background-image: url("/img/social/telegram_active.svg");
 }
-.social__button--youtube::before {
+.social-button--youtube::before {
   background-image: url("/img/social/youtube.svg");
 }
-.social__button--youtube:active::before {
+.social-button--youtube:active::before {
   background-image: url("/img/social/youtube_active.svg");
-}
-.copyright-wrapper {
-  width: 128px;
-  margin: 40px auto 23px auto;
 }
 .copyright {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.copyright__text {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
 }
 * {
   margin: 0;
