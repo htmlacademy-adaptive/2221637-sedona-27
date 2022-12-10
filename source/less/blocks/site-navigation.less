@@ -1,0 +1,49 @@
+.site-navigation__list-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* КНОКА ОТКРЫТЬ-ЗАКРЫТЬ В МОБИЛЬНОМ МЕНЮ */
+.site-navigation__toggle-wrapper {
+  height: 56px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.site-navigation__toggle {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  cursor: pointer;
+  z-index: 1;
+
+  &::before,
+  &--is-open::before {
+    content: " ";
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    width: 23px;
+    height: 22px;
+    background-image: url("../img/svg/icon-menu.svg");
+  }
+
+  &--is-open::before {
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/svg/icon-cross.svg");
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
