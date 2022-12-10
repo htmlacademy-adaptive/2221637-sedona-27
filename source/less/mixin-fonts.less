@@ -1,0 +1,23 @@
+@import url("variables.less");
+
+@standart-font-size: 14px;
+@standart-font-weight: 400;
+@standart-line-height: 21px;
+@standart-text-transform: uppercase;
+@standart-color: @gray--darkest; //Черный цвет.
+
+
+.mixin-fonts-all() {
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: @standart-text-transform;
+}
+
+.mixin-fonts(@font-size: @standart-font-size; @line-height: @standart-line-height; @font-weight: @standart-font-weight; @color: @standart-color) {
+  .mixin-fonts-all;
+  font-weight: @font-weight;
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @color;
+}
+
