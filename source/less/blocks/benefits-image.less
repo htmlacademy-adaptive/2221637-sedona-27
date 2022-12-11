@@ -33,8 +33,10 @@
 }
 
 .benefits-image__text-wrapper--transform {
-  @media (max-width: (@width-tablet - 1px)) {
-    clip-path: polygon(0% 0%, 50% 26px, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 50% 26px, 100% 0%, 100% 100%, 0% 100%);
+
+  @media (min-width: @width-tablet) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 
