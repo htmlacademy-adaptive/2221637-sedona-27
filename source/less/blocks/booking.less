@@ -4,14 +4,36 @@
 .booking {
   padding: 38px 18px 49px 18px;
   text-align: center;
+
+  @media (min-width: @width-tablet) {
+    padding: 61px 0 66px 0;
+  }
+}
+
+.booking__texts-wrapper {
+  @media (min-width: @width-tablet) {
+    padding: 0 166px;
+  }
+
+  @media (min-width: @width-desctop) {
+    padding: 0 382px;
+  }
 }
 
 .booking__title {
   .mixin-fonts(21px; 26px; 700);
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: @width-tablet) {
+    .mixin-fonts(30px; 26px; 700);
+  }
 }
 
 .booking__text {
   .mixin-fonts(@color: @gray--dark);
   padding-bottom: 32px;
+
+  @media (min-width: @width-tablet) {
+    .mixin-fonts(14px; 21px; 400);
+  }
 }

@@ -4,6 +4,10 @@
 .logo {
   height: 0;
   width: @width-logo;
+
+  @media (min-width: @width-tablet) {
+    z-index: 2;
+  }
 }
 
 .logo__img {

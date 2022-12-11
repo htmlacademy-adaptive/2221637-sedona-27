@@ -2,7 +2,12 @@
   position: absolute;
   top: 0;
   width: 100%;
+  max-width: 1440px;
   z-index: 1;
+
+  @media (min-width: @width-tablet) {
+    position: relative;
+  }
 }
 
 /* КНОКА ОТКРЫТЬ-ЗАКРЫТЬ В МОБИЛЬНОМ МЕНЮ */
@@ -10,6 +15,10 @@
   height: 56px;
   width: 100%;
   background-color: #ffffff;
+
+  @media (min-width: @width-tablet) {
+    .visually-hidden;
+  }
 }
 
 .site-navigation__toggle {
@@ -18,6 +27,10 @@
   top: 17px;
   cursor: pointer;
   z-index: 1;
+
+  @media (min-width: @width-tablet) {
+    .visually-hidden;
+  }
 
   &::before,
   &--is-open::before {
