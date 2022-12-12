@@ -1,10 +1,33 @@
 /*БЛОК С ИКОНКАМИ */
 .benefits-icons {
   padding: 31px 18px 46px 65px;
+
+  @media (min-width: @width-tablet) {
+    padding: 158px 0 60px;
+  }
+
+  @media (min-width: @width-desctop) {
+    padding: 169px 0 69px;
+  }
+}
+
+.benefits-icons__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @width-tablet) {
+    flex-direction: row;
+  }
 }
 
 .benefits-icons__title {
   .mixin-fonts(18px; 26px; 700);
+  padding-bottom: 16px;
+
+  @media (min-width: @width-tablet) {
+    .mixin-fonts(21px; 26px; 700);
+    padding-bottom: 34px;
+  }
 }
 
 .benefits-icons__text {
@@ -15,6 +38,12 @@
   list-style-type: none;
   padding-bottom: 33px;
   position: relative;
+
+  @media (min-width: @width-tablet) {
+    padding: 0 50px 0 50px;
+    width: calc(100% / 3);
+    text-align: center;
+  }
 
   &--last-item {
     padding-bottom: 0;
@@ -30,6 +59,13 @@
     width: 40px;
     height: 40px;
     display: inline-block;
+
+    @media (min-width: @width-tablet) {
+      left: calc((100% - 73px) / 2);
+      top: -79px - 25px;
+      width: 79px;
+      height: 79px;
+    }
   }
 
   &--house::before {

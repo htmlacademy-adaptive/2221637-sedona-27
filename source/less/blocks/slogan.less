@@ -4,11 +4,23 @@
 .slogan {
   padding: 32px 18px 40px 18px;
   text-align: center;
+
+  @media (min-width: @width-tablet) {
+    padding: 48px 124px 55px 124px;
+  }
+
+  @media (min-width: @width-desctop) {
+    padding: 59px 358px 44px 358px;
+  }
 }
 
 .slogan__title {
   .mixin-fonts(18px; 26px; 700);
   padding-bottom: 35px;
+
+  @media (min-width: @width-tablet) {
+    .mixin-fonts(21px; 26px; 700);
+  }
 }
 
 .slogan__text {
