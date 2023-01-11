@@ -1,22 +1,16 @@
 /*БЛОК С ИКОНКАМИ */
 .benefits-icons {
+  display: flex;
+  flex-direction: column;
   padding: 31px 18px 46px 65px;
 
   @media (min-width: @width-tablet) {
     padding: 158px 0 60px;
+    flex-direction: row;
   }
 
   @media (min-width: @width-desctop) {
     padding: 169px 0 69px;
-  }
-}
-
-.benefits-icons__list {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: @width-tablet) {
-    flex-direction: row;
   }
 }
 
