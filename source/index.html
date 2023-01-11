@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEDONA</title>
+  <title>Sedona</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -38,7 +42,7 @@
         </div>
       </nav>
       <div class="main-banner">
-        <h1 class="visually-hidden">SEDONA - ГЛАВНАЯ СТРАНИЦА</h1>
+        <h1 class="visually-hidden">Sedona - главная страница</h1>
         <div class="main-banner__img-wrapper">
           <img class="main-banner__img" src="img/content/main-banner_welcome.png" alt="Welcome Sedona">
         </div>
@@ -62,25 +66,27 @@
             <p class="benefits-image__subtitle">&mdash;&nbsp;&#8470;&nbsp;1 &mdash;</p>
             <p class="benefits-image__text">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="benefits-image__image" src="img/content/real-city_mob.jpg" alt="Город Седона">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/content/real-city_desctop.jpg 1x, img/content/real-city_desctop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/content/real-city_tablet.jpg 1x, img/content/real-city_tablet@2x.jpg 2x">
+            <img class="benefits-image__image" src="img/content/real-city_mobile.jpg" srcset="img/content/real-city_mobile@2x.jpg 2x" alt="Город Седона">
+          </picture>
         </div>
 
-        <div class="benefits-icons">
-          <ul class="benefits-icons__list">
-            <li class="benefits-icons__item benefits-icons__item--house">
-              <h4 class="benefits-icons__title">Жилье</h4>
-              <p class="benefits-icons__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
-            </li>
-            <li class="benefits-icons__item benefits-icons__item--food">
-              <h4 class="benefits-icons__title">Еда</h4>
-              <p class="benefits-icons__text">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
-            </li>
-            <li class="benefits-icons__item benefits-icons__item--gift benefits-icons__item--last-item">
-              <h4 class="benefits-icons__title">Сувениры</h4>
-              <p class="benefits-icons__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
-            </li>
-          </ul>
-        </div>
+        <ul class="benefits-icons">
+          <li class="benefits-icons__item benefits-icons__item--house">
+            <h4 class="benefits-icons__title">Жилье</h4>
+            <p class="benefits-icons__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
+          </li>
+          <li class="benefits-icons__item benefits-icons__item--food">
+            <h4 class="benefits-icons__title">Еда</h4>
+            <p class="benefits-icons__text">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+          </li>
+          <li class="benefits-icons__item benefits-icons__item--gift benefits-icons__item--last-item">
+            <h4 class="benefits-icons__title">Сувениры</h4>
+            <p class="benefits-icons__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
+          </li>
+        </ul>
 
         <div class="benefits-image benefits-image--reverse">
           <div class="benefits-image__text-wrapper">
@@ -88,7 +94,11 @@
             <p class="benefits-image__subtitle">— №2 —</p>
             <p class="benefits-image__text">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно</p>
           </div>
-          <img class="benefits-image__image" src="img/content/bridge_mob.jpg" alt="Мост дьявола">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/content/bridge_desctop.jpg 1x, img/content/bridge_desctop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/content/bridge_tablet.jpg 1x, img/content/bridge_tablet@2x.jpg 2x">
+            <img class="benefits-image__image" src="img/content/bridge_mobile.jpg" srcset="img/content/bridge_mobile@2x.jpg 2x" alt="Мост дьявола">
+          </picture>
         </div>
 
         <div class="benefits-no-image">
@@ -146,13 +156,11 @@
           </a>
         </li>
       </ul>
-      <div class="footer__copyright-wrapper">
-        <div class="copyright">
-          <div class="copyright__text">Разработано</div>
-          <a href="https://htmlacademy.ru/" target="_blank">
-            <img class="copyright__logo" src="img/svg/htmlacademy.svg" alt="html academy logo">
-          </a>
-        </div>
+      <div class="copyright">
+        <div class="copyright__text">Разработано</div>
+        <a href="https://htmlacademy.ru/" target="_blank">
+          <img class="copyright__logo" src="img/svg/htmlacademy.svg" alt="html academy logo">
+        </a>
       </div>
     </footer>
   </div>
