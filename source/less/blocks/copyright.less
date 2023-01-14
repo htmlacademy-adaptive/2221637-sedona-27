@@ -3,7 +3,12 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding-top: 7px;
+  padding-top: 9px;
+
+  @media (min-width: @width-tablet) {
+    padding-top: 0;
+    padding-bottom: 3px;
+  }
 }
 
 .copyright__text {

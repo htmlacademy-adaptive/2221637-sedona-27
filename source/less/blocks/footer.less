@@ -2,7 +2,7 @@
 @import url("../variables.less");
 
 .footer {
-  padding: 38px 0 23px 0;
+  padding: 34px 0 23px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,13 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding-left: 26px;
+    padding-right: 42px;
+  }
+
+  @media (min-width: @width-desctop) {
+    padding-left: 7px;
+    padding-right: 24px;
   }
 }
 

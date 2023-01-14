@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sedona</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
@@ -17,7 +17,7 @@
     <header class="header">
       <div class="header__logo logo">
         <a href="/">
-          <img class="logo__img" src="img/svg/logo.svg" alt="Логотип Седона">
+          <img class="logo__img" src="img/logo.svg" alt="Логотип Седона">
         </a>
       </div>
       <nav class="site-navigation">
@@ -44,7 +44,12 @@
       <div class="main-banner">
         <h1 class="visually-hidden">Sedona - главная страница</h1>
         <div class="main-banner__img-wrapper">
-          <img class="main-banner__img" src="img/content/main-banner_welcome.png" alt="Welcome Sedona">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/main-banner_welcome_tablet-desctop.webp 1x, img/content/main-banner_welcome_tablet-desctop@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/main-banner_welcome_mobile.webp 1x, img/content/main-banner_welcome_mobile@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/content/main-banner_welcome_tablet-desctop.jpg 1x, img/content/main-banner_welcome_tablet-desctop@2x.jpg 2x">
+            <img class="main-banner__img" src="img/content/main-banner_welcome_mobile.jpg" srcset="img/content/main-banner_welcome_mobile@2x.jpg 2x" alt="Welcome Sedona">
+          </picture>
         </div>
       </div>
     </header>
@@ -52,8 +57,8 @@
     <main class="main-conteiner">
       <section class="slogan">
         <h2 class="visually-hidden">Слоган</h2>
-        <h3 class="slogan__title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h3>
-        <p class="slogan__text">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
+        <h3 class="slogan__title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h3>
+        <p class="slogan__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
 
       <section class="benefits">
@@ -62,11 +67,14 @@
 
         <div class="benefits-image">
           <div class="benefits-image__text-wrapper benefits-image__text-wrapper--transform">
-            <h3 class="benefits-image__title">Настоящий городок</h3>
-            <p class="benefits-image__subtitle">&mdash;&nbsp;&#8470;&nbsp;1 &mdash;</p>
-            <p class="benefits-image__text">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
+            <h3 class="benefits-image__title">Настоящий<br class="breaker breaker--tablet"> городок</h3>
+            <p class="benefits-image__subtitle">&mdash; &#8470; 1 &mdash;</p>
+            <p class="benefits-image__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)" srcset="img/content/real-city_desctop.webp 1x, img/content/real-city_desctop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/real-city_tablet.webp 1x, img/content/real-city_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/real-city_mobile.webp 1x, img/content/real-city_mobile@2x.webp 2x">
             <source media="(min-width: 1280px)" srcset="img/content/real-city_desctop.jpg 1x, img/content/real-city_desctop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/real-city_tablet.jpg 1x, img/content/real-city_tablet@2x.jpg 2x">
             <img class="benefits-image__image" src="img/content/real-city_mobile.jpg" srcset="img/content/real-city_mobile@2x.jpg 2x" alt="Город Седона">
@@ -75,26 +83,29 @@
 
         <ul class="benefits-icons">
           <li class="benefits-icons__item benefits-icons__item--house">
-            <h4 class="benefits-icons__title">Жилье</h4>
-            <p class="benefits-icons__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
+            <h4 class="benefits-icons__title benefits-icons__title--house">Жилье</h4>
+            <p class="benefits-icons__text">Рекомендуем пожить в настоящем<br class="breaker breaker--desctop"> мотеле, все как в кино!</p>
           </li>
           <li class="benefits-icons__item benefits-icons__item--food">
-            <h4 class="benefits-icons__title">Еда</h4>
-            <p class="benefits-icons__text">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+            <h4 class="benefits-icons__title benefits-icons__title--food">Еда</h4>
+            <p class="benefits-icons__text">Всегда заказывайте фирменный бургер,<br class="breaker breaker--tablet"> вы не разочаруетесь!</p>
           </li>
           <li class="benefits-icons__item benefits-icons__item--gift benefits-icons__item--last-item">
-            <h4 class="benefits-icons__title">Сувениры</h4>
-            <p class="benefits-icons__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
+            <h4 class="benefits-icons__title benefits-icons__title--gift">Сувениры</h4>
+            <p class="benefits-icons__text benefits-icons__text--gift">Не только китайского,<br class="breaker breaker--desctop"> но и местного производства!</p>
           </li>
         </ul>
 
         <div class="benefits-image benefits-image--reverse">
-          <div class="benefits-image__text-wrapper">
-            <h3 class="benefits-image__title">Там есть Мост дьявола.</h3>
+          <div class="benefits-image__text-wrapper benefits-image__text-wrapper--transform2">
+            <h3 class="benefits-image__title">Там есть<br class="breaker breaker--tablet"> Мост дьявола.</h3>
             <p class="benefits-image__subtitle">— №2 —</p>
-            <p class="benefits-image__text">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно</p>
+            <p class="benefits-image__text">Да, по нему можно пройти!<br class="breaker breaker--desctop"> Если вы осмелитесь, конечно</p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)" srcset="img/content/bridge_desctop.webp 1x, img/content/bridge_desctop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/bridge_tablet.webp 1x, img/content/bridge_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/bridge_mobile.webp 1x, img/content/bridge_mobile@2x.webp 2x">
             <source media="(min-width: 1280px)" srcset="img/content/bridge_desctop.jpg 1x, img/content/bridge_desctop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/bridge_tablet.jpg 1x, img/content/bridge_tablet@2x.jpg 2x">
             <img class="benefits-image__image" src="img/content/bridge_mobile.jpg" srcset="img/content/bridge_mobile@2x.jpg 2x" alt="Мост дьявола">
@@ -104,17 +115,17 @@
         <div class="benefits-no-image">
           <ul class="benefits-no-image__list">
             <li class="benefits-no-image__item">
-              <h3 class="benefits-no-image__title">Небольшая площадь</h3>
+              <h3 class="benefits-no-image__title">Небольшая<br class="breaker breaker--desctop"> площадь</h3>
               <p class="benefits-no-image__subtitle">— №3 —</p>
               <p class="benefits-no-image__text">Все интересные места находятся очень близко</p>
             </li>
-            <li class="benefits-no-image__item">
-              <h3 class="benefits-no-image__title">Красивая дорога</h3>
+            <li class="benefits-no-image__item benefits-no-image__item--center">
+              <h3 class="benefits-no-image__title">Красивая<br class="breaker breaker--tablet"> дорога</h3>
               <p class="benefits-no-image__subtitle">— №4 —</p>
-              <p class="benefits-no-image__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="benefits-no-image__text">Ехать в Седону из Лас-Вегаса совсем<br class="breaker breaker--tablet"> не скучно!</p>
             </li>
             <li class="benefits-no-image__item benefits-no-image__item--last-item">
-              <h3 class="benefits-no-image__title">Мало туристов</h3>
+              <h3 class="benefits-no-image__title">Мало<br class="breaker breaker--tablet"> туристов</h3>
               <p class="benefits-no-image__subtitle">— №5 —</p>
               <p class="benefits-no-image__text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
@@ -132,14 +143,14 @@
       </section>
 
       <section class="map">
-        <img class="map__image" src="img/content/map_mob.jpg" alt="Карта Седона">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727017.5592046288!2d-112.14171015171956!3d34.677423890814964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673712443228!5m2!1sru!2sru" width="100%" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
 
     <footer class="footer">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="footer__title">#visitSEDONA</p>
-      <ul class="social">
+      <ul class="social social--wrapper">
         <li class="social__item">
           <a class="social-button button social-button--vkontakte" href="https://vk.com/" target="_blank">
             <span class="visually-hidden">ВКонтакте</span>
@@ -159,7 +170,7 @@
       <div class="copyright">
         <div class="copyright__text">Разработано</div>
         <a href="https://htmlacademy.ru/" target="_blank">
-          <img class="logo__img" src="img/svg/htmlacademylogo.svg" alt="Логотип HtmlAcademy">
+          <img class="copyright__logo" src="img/sprite.svg#htmlacademy" height="34" width="27" alt="Логотип HtmlAcademy">
         </a>
       </div>
     </footer>
