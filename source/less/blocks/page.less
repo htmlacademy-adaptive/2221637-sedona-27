@@ -5,10 +5,10 @@
 .page__content {
   background-color: @gray--lightest;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-  max-width: 1200px;
+  max-width: @width-desktop;
   margin: 0  auto;
 
   @media (min-width: @width-desktop) {
-    width: calc(100% - 80px);
+    width: @width-desktop;
   }
 }
