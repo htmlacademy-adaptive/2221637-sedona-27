@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona</title>
+
+ <!-- Start preload -->
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="img/logo.svg" as="image">
+  <link rel="preload" href="img/content/main-banner@2x.jpg" as="image">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+ <!-- End preload -->
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="page__body">
+  <div class="page__content">
+    <header class="header">
+
+
+      <div class="main-banner">
+        <h1 class="visually-hidden">Sedona - главная страница</h1>
+        <div class="main-banner__img-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/main-banner_welcome_tablet-desktop.webp 1x, img/content/main-banner_welcome_tablet-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/main-banner_welcome_mobile.webp 1x, img/content/main-banner_welcome_mobile@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/content/main-banner_welcome_tablet-desktop.jpg 1x, img/content/main-banner_welcome_tablet-desktop@2x.jpg 2x">
+            <img class="main-banner__img" src="img/content/main-banner_welcome_mobile.jpg" srcset="img/content/main-banner_welcome_mobile@2x.jpg 2x" alt="Welcome Sedona">
+          </picture>
+        </div>
+      </div>
+    </header>
+
+
+  </div>
+<script src="js/script.js"></script>
+</body>
+</html>

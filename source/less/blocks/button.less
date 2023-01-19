@@ -4,13 +4,13 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #ffffff;
+  color: @gray--lightest;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   /* ФОН БОКСА*/
   display: inline-block;
-  background-color: #81b3d2;
+  background-color: @color-main;
   border: 0;
   width: 458px;
   max-width: 100%;
@@ -19,11 +19,11 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #669ec0;
+    background-color: @color-main--dark;
   }
 
   &:active {
-    background-color: #5496bd;
-    color: #87b5d1;
+    background-color: @color-main--darkest;
+    color: @color-main--light;
   }
 }

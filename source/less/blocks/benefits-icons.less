@@ -9,7 +9,7 @@
     flex-direction: row;
   }
 
-  @media (min-width: @width-desctop) {
+  @media (min-width: @width-desktop) {
     padding: 169px 0 69px;
   }
 }
@@ -37,7 +37,7 @@
     }
   }
 
-  @media (min-width: @width-desctop) {
+  @media (min-width: @width-desktop) {
     &--house {
       padding-top: 1px;
     }
@@ -50,12 +50,6 @@
 
 .benefits-icons__text {
   .mixin-fonts(14px; 21px; 400);
-
-  @media (min-width: @width-tablet) {
-    &--gift {
-      padding-right: 10px;
-    }
-  }
 }
 
 .benefits-icons__item {
@@ -90,13 +84,13 @@
     display: inline-block;
 
     @media (min-width: @width-tablet) {
-      left: 87px;
+      left: calc(50% - 41px);
       top: -93px;
       width: 79px;
       height: 79px;
     }
 
-    @media (min-width: @width-desctop) {
+    @media (min-width: @width-desktop) {
       left: 157px;
       top: -106px;
       width: 81px;

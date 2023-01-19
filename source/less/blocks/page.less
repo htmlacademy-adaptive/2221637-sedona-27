@@ -1,14 +1,14 @@
 .page__body {
-  background-color: #ececec;
+  background-color: @gray-light;
 }
 
 .page__content {
-  background-color: #ffffff;
+  background-color: @gray--lightest;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  max-width: 1200px;
+  margin: 0  auto;
 
-  @media (min-width: @width-desctop) {
+  @media (min-width: @width-desktop) {
     width: calc(100% - 80px);
-    max-width: 1200px;
-    margin: 0  auto;
   }
 }
