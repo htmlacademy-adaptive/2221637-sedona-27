@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sedona</title>
+
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="img/logo.svg" as="image">
+  <link rel="preload" href="img/content/main-banner@2x.jpg" as="image">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
@@ -45,9 +53,9 @@
         <h1 class="visually-hidden">Sedona - главная страница</h1>
         <div class="main-banner__img-wrapper">
           <picture>
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/main-banner_welcome_tablet-desctop.webp 1x, img/content/main-banner_welcome_tablet-desctop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/main-banner_welcome_tablet-desktop.webp 1x, img/content/main-banner_welcome_tablet-desktop@2x.webp 2x">
             <source type="image/webp" srcset="img/content/main-banner_welcome_mobile.webp 1x, img/content/main-banner_welcome_mobile@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/content/main-banner_welcome_tablet-desctop.jpg 1x, img/content/main-banner_welcome_tablet-desctop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/content/main-banner_welcome_tablet-desktop.jpg 1x, img/content/main-banner_welcome_tablet-desktop@2x.jpg 2x">
             <img class="main-banner__img" src="img/content/main-banner_welcome_mobile.jpg" srcset="img/content/main-banner_welcome_mobile@2x.jpg 2x" alt="Welcome Sedona">
           </picture>
         </div>
@@ -72,19 +80,19 @@
             <p class="benefits-image__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width: 1280px)" srcset="img/content/real-city_desctop.webp 1x, img/content/real-city_desctop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/real-city_desktop.webp 1x, img/content/real-city_desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/content/real-city_tablet.webp 1x, img/content/real-city_tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/content/real-city_mobile.webp 1x, img/content/real-city_mobile@2x.webp 2x">
-            <source media="(min-width: 1280px)" srcset="img/content/real-city_desctop.jpg 1x, img/content/real-city_desctop@2x.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="img/content/real-city_desktop.jpg 1x, img/content/real-city_desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/real-city_tablet.jpg 1x, img/content/real-city_tablet@2x.jpg 2x">
-            <img class="benefits-image__image" src="img/content/real-city_mobile.jpg" srcset="img/content/real-city_mobile@2x.jpg 2x" alt="Город Седона">
+            <img class="benefits-image__image" loading="lazy" src="img/content/real-city_mobile.jpg" srcset="img/content/real-city_mobile@2x.jpg 2x" alt="Город Седона">
           </picture>
         </div>
 
         <ul class="benefits-icons">
           <li class="benefits-icons__item benefits-icons__item--house">
             <h4 class="benefits-icons__title benefits-icons__title--house">Жилье</h4>
-            <p class="benefits-icons__text">Рекомендуем пожить в настоящем<br class="breaker breaker--desctop"> мотеле, все как в кино!</p>
+            <p class="benefits-icons__text">Рекомендуем пожить в настоящем<br class="breaker breaker--desktop"> мотеле, все как в кино!</p>
           </li>
           <li class="benefits-icons__item benefits-icons__item--food">
             <h4 class="benefits-icons__title benefits-icons__title--food">Еда</h4>
@@ -92,7 +100,7 @@
           </li>
           <li class="benefits-icons__item benefits-icons__item--gift benefits-icons__item--last-item">
             <h4 class="benefits-icons__title benefits-icons__title--gift">Сувениры</h4>
-            <p class="benefits-icons__text benefits-icons__text--gift">Не только китайского,<br class="breaker breaker--desctop"> но и местного производства!</p>
+            <p class="benefits-icons__text benefits-icons__text--gift">Не только китайского,<br class="breaker breaker--desktop"> но и местного производства!</p>
           </li>
         </ul>
 
@@ -100,22 +108,22 @@
           <div class="benefits-image__text-wrapper benefits-image__text-wrapper--transform2">
             <h3 class="benefits-image__title">Там есть<br class="breaker breaker--tablet"> Мост дьявола.</h3>
             <p class="benefits-image__subtitle">— №2 —</p>
-            <p class="benefits-image__text">Да, по нему можно пройти!<br class="breaker breaker--desctop"> Если вы осмелитесь, конечно</p>
+            <p class="benefits-image__text">Да, по нему можно пройти!<br class="breaker breaker--desktop"> Если вы осмелитесь, конечно</p>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width: 1280px)" srcset="img/content/bridge_desctop.webp 1x, img/content/bridge_desctop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/bridge_desktop.webp 1x, img/content/bridge_desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/content/bridge_tablet.webp 1x, img/content/bridge_tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/content/bridge_mobile.webp 1x, img/content/bridge_mobile@2x.webp 2x">
-            <source media="(min-width: 1280px)" srcset="img/content/bridge_desctop.jpg 1x, img/content/bridge_desctop@2x.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="img/content/bridge_desktop.jpg 1x, img/content/bridge_desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/bridge_tablet.jpg 1x, img/content/bridge_tablet@2x.jpg 2x">
-            <img class="benefits-image__image" src="img/content/bridge_mobile.jpg" srcset="img/content/bridge_mobile@2x.jpg 2x" alt="Мост дьявола">
+            <img class="benefits-image__image" loading="lazy" src="img/content/bridge_mobile.jpg" srcset="img/content/bridge_mobile@2x.jpg 2x" alt="Мост дьявола">
           </picture>
         </div>
 
         <div class="benefits-no-image">
           <ul class="benefits-no-image__list">
             <li class="benefits-no-image__item">
-              <h3 class="benefits-no-image__title">Небольшая<br class="breaker breaker--desctop"> площадь</h3>
+              <h3 class="benefits-no-image__title">Небольшая<br class="breaker breaker--tablet"> площадь</h3>
               <p class="benefits-no-image__subtitle">— №3 —</p>
               <p class="benefits-no-image__text">Все интересные места находятся очень близко</p>
             </li>
@@ -143,7 +151,17 @@
       </section>
 
       <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727017.5592046288!2d-112.14171015171956!3d34.677423890814964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673712443228!5m2!1sru!2sru" width="100%" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map__image">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/map_desktop.webp 1x, img/content/map_desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map_tablet.webp 1x, img/content/map_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/map_mobile.webp 1x, img/content/map_mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/content/map_desktop.jpg 1x, img/content/map_desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/content/bmap_tablet.jpg 1x, img/content/map_tablet@2x.jpg 2x">
+            <img src="img/content/map_mobile.jpg" loading="lazy" srcset="img/content/map_mobile@2x.jpg 2x" alt="Где находится Седона" height="350" width="100%">
+          </picture>
+      </div>
+        <iframe class="map__frame map__frame--no-js" title="Карта Седоны" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727017.5592046288!2d-112.14171015171956!3d34.677423890814964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673712443228!5m2!1sru!2sru" width="100%" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
 
@@ -152,29 +170,38 @@
       <p class="footer__title">#visitSEDONA</p>
       <ul class="social social--wrapper">
         <li class="social__item">
-          <a class="social-button button social-button--vkontakte" href="https://vk.com/" target="_blank">
-            <span class="visually-hidden">ВКонтакте</span>
+          <a class="social-button button" href="https://vk.com/" target="_blank">
+            <svg class="social-button__icon" role="img">
+              <title>Перейти во вконтакте</title>
+              <use href="img/sprite.svg#vkontakte"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social-button button social-button--telegram" href="https://telegram.org/" target="_blank">
-            <span class="visually-hidden">Телеграм</span>
+          <a class="social-button button" href="https://telegram.org/" target="_blank">
+            <svg class="social-button__icon" role="img">
+              <title>Перейти в телеграм</title>
+              <use href="img/sprite.svg#telegram"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item social__item--last-item">
-          <a class="social-button button social-button--youtube" href="https://www.youtube.com/" target="_blank">
-            <span class="visually-hidden">YouTube</span>
+          <a class="social-button button" href="https://www.youtube.com/" target="_blank">
+            <svg class="social-button__icon" role="img">
+              <title>Перейти в youtube</title>
+              <use href="img/sprite.svg#youtube"></use>
+            </svg>
           </a>
         </li>
       </ul>
       <div class="copyright">
         <div class="copyright__text">Разработано</div>
         <a href="https://htmlacademy.ru/" target="_blank">
-          <img class="copyright__logo" src="img/sprite.svg#htmlacademy" height="34" width="27" alt="Логотип HtmlAcademy">
+          <img class="copyright__logo" src="img/sprite.svg#htmlacademy" height="34" width="27" alt="HtmlAcademy">
         </a>
       </div>
     </footer>
   </div>
-<script src="js/site-navigation.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

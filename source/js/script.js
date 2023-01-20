@@ -1,5 +1,7 @@
 let navToggle = document.querySelector('.site-navigation__toggle');
 let navList = document.querySelector('.site-navigation-list');
+let mapFrame = document.querySelector('.map__frame');
+let mapImage = document.querySelector('.map__image');
 
 navList.classList.remove('site-navigation-list--no-js');
 navToggle.classList.remove('site-navigation__toggle--no-js');
@@ -16,3 +18,6 @@ navToggle.onclick = function() {
   }
 
 }
+
+mapFrame.classList.remove('map__frame--no-js');
+mapImage.classList.add('map__image--js');
