@@ -49,7 +49,7 @@ return gulp.src('source/js/script.js')
 // Images
 
 const optimizeImages = () => {
-return gulp.src('source/img/**/*.{png,jpg}')
+return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*.*'])
 .pipe(squoosh())
 .pipe(gulp.dest('build/img'))
 }
@@ -62,7 +62,7 @@ return gulp.src('source/img/**/*.{png,jpg,webp}')
 // WebP
 
 const createWebp = () => {
-return gulp.src('source/img/**/*.{png,jpg}')
+return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*.png'])
 .pipe(squoosh({
 webp: {}
 }))
@@ -72,7 +72,7 @@ webp: {}
 // SVG
 
 const svg = () =>
-gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
