@@ -3,10 +3,19 @@
 .header {
   text-align: center;
   max-width: 100%;
+  background-color: @gray--lightest;
 }
 
 .header__logo {
-  position: absolute;
+  position: relative;
   left: calc((100% - @width-logo) / 2);
   z-index: 1;
+
+  &--no-js {
+    padding-bottom: 100px;
+
+    @media (min-width: @width-tablet) {
+      padding-bottom: 0;
+    }
+  }
 }

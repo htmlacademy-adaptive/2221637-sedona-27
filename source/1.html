@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona</title>
+
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="img/logo.svg" as="image">
+  <link rel="preload" href="img/content/main-banner@2x.jpg" as="image">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="page__body">
+    <header class="header">
+      <div class="header__logo header__logo--no-js logo">
+        <a href="/">
+          <img class="logo__img" src="img/logo.svg" alt="Логотип Седона" width="195" height="96">
+        </a>
+      </div>
+      <nav class="site-navigation">
+        <div class="site-navigation__list-wrapper">
+          <ul class="site-navigation-list site-navigation-list--no-js">
+            <li class="site-navigation-list__item">
+              <a class="site-navigation-list__link button site-navigation-list__link--first-element site-navigation-list__link--current" href="/">Главная</a>
+            </li>
+            <li class="site-navigation-list__item">
+              <a class="site-navigation-list__link button" href="#">Фото и видео</a>
+            </li>
+            <li class="site-navigation-list__item">
+              <a class="site-navigation-list__link button" href="#">Форма отзыва</a>
+            </li>
+            <li class="site-navigation-list__item">
+              <a class="site-navigation-list__link button site-navigation-list__link--last-element" href="https://htmlacademy.ru/" target="_blank">html academy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-navigation__toggle-wrapper site-navigation__toggle-wrapper--no-js">
+          <div class="site-navigation__toggle"></div>
+        </div>
+      </nav>
+      <div class="main-banner">
+        <h1 class="visually-hidden">Sedona - главная страница</h1>
+        <div class="main-banner__img-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/main-banner_welcome_tablet-desktop.webp 1x, img/content/main-banner_welcome_tablet-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/main-banner_welcome_mobile.webp 1x, img/content/main-banner_welcome_mobile@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/content/main-banner_welcome_tablet-desktop.jpg 1x, img/content/main-banner_welcome_tablet-desktop@2x.jpg 2x">
+            <img class="main-banner__img" src="img/content/main-banner_welcome_mobile.jpg" srcset="img/content/main-banner_welcome_mobile@2x.jpg 2x" alt="Welcome Sedona">
+          </picture>
+        </div>
+      </div>
+    </header>
+
+<script src="js/script.js"></script>
+</body>
+</html>

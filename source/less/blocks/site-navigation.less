@@ -8,6 +8,10 @@
   @media (min-width: @width-tablet) {
     position: relative;
   }
+
+  &--no-js {
+    position: relative;
+  }
 }
 
 /* КНОКА ОТКРЫТЬ-ЗАКРЫТЬ В МОБИЛЬНОМ МЕНЮ */
@@ -19,6 +23,10 @@
   @media (min-width: @width-tablet) {
     .visually-hidden;
   }
+
+  &--no-js {
+    display: none;
+  }
 }
 
 .site-navigation__toggle {
@@ -27,10 +35,6 @@
   top: 17px;
   cursor: pointer;
   z-index: 1;
-
-  &--no-js {
-    .visually-hidden;
-  }
 
   @media (min-width: @width-tablet) {
     .visually-hidden;
