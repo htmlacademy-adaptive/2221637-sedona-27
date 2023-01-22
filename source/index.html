@@ -23,13 +23,13 @@
   <div class="page__content">
 
     <header class="header">
-      <div class="header__logo logo">
+      <div class="header__logo header__logo--no-js logo">
         <a href="/">
-          <img class="logo__img" src="img/logo.svg" alt="Логотип Седона">
+          <img class="logo__img" src="img/logo.svg" alt="Логотип Седона" width="195" height="96">
         </a>
       </div>
       <nav class="site-navigation">
-        <div class="site-navigation__list-wrapper">
+        <div class="site-navigation__list-wrapper site-navigation__list-wrapper--no-js">
           <ul class="site-navigation-list site-navigation-list--no-js">
             <li class="site-navigation-list__item">
               <a class="site-navigation-list__link button site-navigation-list__link--first-element site-navigation-list__link--current" href="/">Главная</a>
@@ -45,8 +45,8 @@
             </li>
           </ul>
         </div>
-        <div class="site-navigation__toggle-wrapper">
-          <div class="site-navigation__toggle site-navigation__toggle--no-js"></div>
+        <div class="site-navigation__toggle-wrapper site-navigation__toggle-wrapper--no-js">
+          <div class="site-navigation__toggle"></div>
         </div>
       </nav>
       <div class="main-banner">
@@ -75,7 +75,7 @@
 
         <div class="benefits-image">
           <div class="benefits-image__text-wrapper benefits-image__text-wrapper--transform">
-            <h3 class="benefits-image__title">Настоящий<br class="breaker breaker--tablet"> городок</h3>
+            <h3 class="benefits-image__title">Настоящий<span class="break--tablet"></span> городок</h3>
             <p class="benefits-image__subtitle">&mdash; &#8470; 1 &mdash;</p>
             <p class="benefits-image__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
@@ -92,23 +92,23 @@
         <ul class="benefits-icons">
           <li class="benefits-icons__item benefits-icons__item--house">
             <h4 class="benefits-icons__title benefits-icons__title--house">Жилье</h4>
-            <p class="benefits-icons__text">Рекомендуем пожить в настоящем<br class="breaker breaker--desktop"> мотеле, все как в кино!</p>
+            <p class="benefits-icons__text">Рекомендуем пожить в настоящем<span class="break--desktop"></span> мотеле, все как в кино!</p>
           </li>
           <li class="benefits-icons__item benefits-icons__item--food">
             <h4 class="benefits-icons__title benefits-icons__title--food">Еда</h4>
-            <p class="benefits-icons__text">Всегда заказывайте фирменный бургер,<br class="breaker breaker--tablet"> вы не разочаруетесь!</p>
+            <p class="benefits-icons__text">Всегда заказывайте фирменный бургер,<span class="break--tablet"></span> вы не разочаруетесь!</p>
           </li>
           <li class="benefits-icons__item benefits-icons__item--gift benefits-icons__item--last-item">
             <h4 class="benefits-icons__title benefits-icons__title--gift">Сувениры</h4>
-            <p class="benefits-icons__text benefits-icons__text--gift">Не только китайского,<br class="breaker breaker--desktop"> но и местного производства!</p>
+            <p class="benefits-icons__text benefits-icons__text--gift">Не только китайского,<span class="break--desktop"></span> но и местного производства!</p>
           </li>
         </ul>
 
         <div class="benefits-image benefits-image--reverse">
           <div class="benefits-image__text-wrapper benefits-image__text-wrapper--transform2">
-            <h3 class="benefits-image__title">Там есть<br class="breaker breaker--tablet"> Мост дьявола.</h3>
+            <h3 class="benefits-image__title">Там есть<span class="break--tablet"></span> Мост дьявола.</h3>
             <p class="benefits-image__subtitle">— №2 —</p>
-            <p class="benefits-image__text">Да, по нему можно пройти!<br class="breaker breaker--desktop"> Если вы осмелитесь, конечно</p>
+            <p class="benefits-image__text">Да, по нему можно пройти!<span class="break--desktop"></span> Если вы осмелитесь, конечно</p>
           </div>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/bridge_desktop.webp 1x, img/content/bridge_desktop@2x.webp 2x">
@@ -123,17 +123,17 @@
         <div class="benefits-no-image">
           <ul class="benefits-no-image__list">
             <li class="benefits-no-image__item">
-              <h3 class="benefits-no-image__title">Небольшая<br class="breaker breaker--tablet"> площадь</h3>
+              <h3 class="benefits-no-image__title">Небольшая<span class="break--tablet"></span> площадь</h3>
               <p class="benefits-no-image__subtitle">— №3 —</p>
               <p class="benefits-no-image__text">Все интересные места находятся очень близко</p>
             </li>
             <li class="benefits-no-image__item benefits-no-image__item--center">
-              <h3 class="benefits-no-image__title">Красивая<br class="breaker breaker--tablet"> дорога</h3>
+              <h3 class="benefits-no-image__title">Красивая<span class="break--tablet"></span> дорога</h3>
               <p class="benefits-no-image__subtitle">— №4 —</p>
-              <p class="benefits-no-image__text">Ехать в Седону из Лас-Вегаса совсем<br class="breaker breaker--tablet"> не скучно!</p>
+              <p class="benefits-no-image__text">Ехать в Седону из Лас-Вегаса совсем<span class="break--tablet"></span> не скучно!</p>
             </li>
             <li class="benefits-no-image__item benefits-no-image__item--last-item">
-              <h3 class="benefits-no-image__title">Мало<br class="breaker breaker--tablet"> туристов</h3>
+              <h3 class="benefits-no-image__title">Мало<span class="break--tablet"></span> туристов</h3>
               <p class="benefits-no-image__subtitle">— №5 —</p>
               <p class="benefits-no-image__text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
@@ -145,12 +145,13 @@
         <div class="booking__texts-wrapper">
           <h2 class="visually-hidden">Бронирование</h2>
           <p class="booking__title">Заинтересовались?</p>
-          <p class="booking__text">Укажите предполагаемые даты поездки,<br class="breaker breaker--tablet"> и мы покажем вам лучшие предложения гостиниц в Cедоне.</p>
+          <p class="booking__text">Укажите предполагаемые даты поездки,<span class="break--tablet"></span> и мы покажем вам лучшие предложения гостиниц в Cедоне.</p>
         </div>
         <a class="button" href="#">Найти гостиницу</a>
       </section>
 
       <section class="map">
+        <h2 class="visually-hidden">Карта Седоны</h2>
         <div class="map__image">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/map_desktop.webp 1x, img/content/map_desktop@2x.webp 2x">
@@ -158,10 +159,10 @@
             <source type="image/webp" srcset="img/content/map_mobile.webp 1x, img/content/map_mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/content/map_desktop.jpg 1x, img/content/map_desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/bmap_tablet.jpg 1x, img/content/map_tablet@2x.jpg 2x">
-            <img src="img/content/map_mobile.jpg" loading="lazy" srcset="img/content/map_mobile@2x.jpg 2x" alt="Где находится Седона" height="350" width="100%">
+            <img src="img/content/map_mobile.jpg" loading="lazy" srcset="img/content/map_mobile@2x.jpg 2x" alt="Где находится Седона" height="350">
           </picture>
       </div>
-        <iframe class="map__frame map__frame--no-js" title="Карта Седоны" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727017.5592046288!2d-112.14171015171956!3d34.677423890814964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673712443228!5m2!1sru!2sru" width="100%" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map__frame map__frame--no-js" title="Карта Седоны" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727017.5592046288!2d-112.14171015171956!3d34.677423890814964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673712443228!5m2!1sru!2sru" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
 
@@ -171,7 +172,7 @@
       <ul class="social social--wrapper">
         <li class="social__item">
           <a class="social-button button" href="https://vk.com/" target="_blank">
-            <svg class="social-button__icon" role="img">
+            <svg class="social-button__icon" role="img" width="24" height="24">
               <title>Перейти во вконтакте</title>
               <use href="img/sprite.svg#vkontakte"></use>
             </svg>
@@ -179,7 +180,7 @@
         </li>
         <li class="social__item">
           <a class="social-button button" href="https://telegram.org/" target="_blank">
-            <svg class="social-button__icon" role="img">
+            <svg class="social-button__icon" role="img" width="24" height="24">
               <title>Перейти в телеграм</title>
               <use href="img/sprite.svg#telegram"></use>
             </svg>
@@ -187,19 +188,20 @@
         </li>
         <li class="social__item social__item--last-item">
           <a class="social-button button" href="https://www.youtube.com/" target="_blank">
-            <svg class="social-button__icon" role="img">
+            <svg class="social-button__icon" role="img" width="24" height="24">
               <title>Перейти в youtube</title>
               <use href="img/sprite.svg#youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <div class="copyright">
+      <a class="copyright" href="https://htmlacademy.ru/" target="_blank">
         <div class="copyright__text">Разработано</div>
-        <a href="https://htmlacademy.ru/" target="_blank">
-          <img class="copyright__logo" src="img/sprite.svg#htmlacademy" height="34" width="27" alt="HtmlAcademy">
-        </a>
-      </div>
+        <svg class="copyright__logo" role="img" height="34" width="27">
+          <title>HtmlAcademy</title>
+          <use href="img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
     </footer>
   </div>
 <script src="js/script.js"></script>

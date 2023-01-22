@@ -4,13 +4,23 @@
   justify-content: center;
   gap: 12px;
   padding-top: 9px;
+  text-decoration: none;
+  .mixin-fonts(14px; 21px; 400);
 
   @media (min-width: @width-tablet) {
     padding-top: 0;
     padding-bottom: 3px;
   }
+
+  &:hover {
+    color: @color-main;
+  }
+
+  &:active {
+    color: @gray--dareker;
+  }
 }
 
-.copyright__text {
-  .mixin-fonts(14px; 21px; 400);
+.copyright__logo > * {
+  fill: currentColor;
 }

@@ -1,15 +1,15 @@
-.breaker {
-  display: none;
-
-  &--tablet {
-    @media (min-width: @width-tablet) {
-      display: inline;
+.break {
+  @media (min-width: @width-tablet) {
+    &--tablet::before {
+      content: "\A";
+      white-space: pre;
     }
   }
 
-  &--desktop {
-    @media (min-width: @width-desktop) {
-      display: inline;
+  @media (min-width: @width-desktop) {
+    &--desktop::before {
+      content: "\A";
+      white-space: pre;
     }
   }
 }
